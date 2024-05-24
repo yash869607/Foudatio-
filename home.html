@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supy</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+            background-image:url(img/background.jpg);
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            height:200vh;
+        }
+
+        nav {
+            background-color:black;
+            overflow: hidden;
+            border: 100px;
+            border-color: black;
+            border-radius: 33px;
+            margin-top: 10px;
+            padding: 14px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 20;
+            padding: 20;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a :hover {
+            text-decoration: none;
+            color: green;
+            font-weight: bold;
+            font-size: 18px;
+            display: inline-block;
+            padding: 15px 20px;
+        }
+
+        nav a:hover {
+            background-color: lightblue;
+        }
+                nav li a{
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family:'Courier New', Courier, monospace;
+            padding: 8px 4px;
+            color: white;
+            text-decoration: none;
+            border: 16px;
+            border-color: aliceblue;
+        }
+        nav img{
+            vertical-align: middle;
+            width: 30px;
+            height: 30px;
+            padding-right: 100px;
+
+        }
+        p{
+            text-transform: uppercase;
+            margin-top: 50px;
+            color: rgb(50, 8, 238);
+            text-align: center;
+            font-size: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        img{
+            /* border-radius: 20px; */
+            margin-top: 20px;
+        }
+        /* Add more styles for your content, sections, etc. */
+        /* slidshow code */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+            /* margin-left:  */
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+                                    
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 50px 0;
+    margin-top: 40%;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <nav >
+        <ul>
+            <!-- <img src="img/logo.png" alt="My logo-removebg-preview"  wdith="30px" height="30px"> -->
+            <li><b><a href="home.html">Home</a></b></li>
+            <li><b><a href="story.html">Story</a></b></li>
+            <li><b><a href="Dogfoundation.html">Foundation</a></b></li>
+            <li><b><a href="gallary.html">Gallery</a></b></li>
+            <li><b><a href="contactus.html">Contact us</a></b></li>
+            <li><b><a href="about.html">About</a></b></li>
+            <li><b><a href="Privacy Policy.html">Privacy policy</a></b></li>
+        </ul>
+    </nav>
+    <!-- /* slidshow code */ -->
+    <div class="slider-container">
+      <div class="slider">
+          <div class="slide"><img src="https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497" alt="Slide 2" height="400" width="1500"></div>
+          <div class="slide"><img src="https://cdn.pixabay.com/photo/2017/09/25/13/12/puppy-2785074_640.jpg " alt="Slide 2" height="400" width="1500"></div>
+          <div class="slide"><img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpghttps://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg" alt="Slide 2" height="400" width="1500"></div>
+          <div class="slide"><img src="https://i.guim.co.uk/img/media/fccf2d648bd42dae41b65cad55925181506ec5e7/0_117_6016_3611/master/6016.jpg?width=465&dpr=1&s=none" alt="Slide 2" height="400" width="1500"></div>
+          <!-- Add more slides as needed -->
+      </div>
+  
+      <button class="slider-btn prev" onclick="prevSlide()">❮</button>
+      <button class="slider-btn next" onclick="nextSlide()">❯</button>
+  </div>
+  
+  <script>
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+  
+      function showSlide(index) {
+          if (index < 0) {
+              currentIndex = totalSlides - 1;
+          } else if (index >= totalSlides) {
+              currentIndex = 0;
+          } else {
+              currentIndex = index;
+          }
+  
+          const translateValue = -currentIndex * 100 + '%';
+          document.querySelector('.slider').style.transform = 'translateX(' + translateValue + ')';
+      }
+  
+      function nextSlide() {
+          currentIndex++;
+          showSlide(currentIndex);
+      }
+  
+      function prevSlide() {
+          currentIndex--;
+          showSlide(currentIndex);
+      }
+  </script>
+    
+    <!-- <img src="img/rohit1.jpeg" alt=""> -->
+    <!-- <img src="img/rohit2.jpeg" alt=""> -->
+    <!-- <img src="img/rohit3.jpeg" alt=""> -->
+    <!-- <img src="img/rohit4.jpeg" alt=""> -->
+    <!-- <img src="img/rohit5.jpeg" alt=""> -->
+    <!-- <img src="img/rohit6.jpeg" alt=""> -->
+    
+     <p><b>save the life of animal <br>
+        They also have the right to live</b></p>
+    
+    <!-- <img src="img/rohit12.jpeg" alt=""> -->
+    <!-- <img src="img/rohit8.jpeg" alt=""> -->
+    <!-- <img src="img/rohit9.jpeg" alt=""> -->
+    <!-- <img src="img/rohit10.jpeg" alt=""> -->
+    <!-- <img src="img/rohit11.jpeg" alt=""> -->
+    <!-- <img src="img/rohit12.jpeg" alt=""> -->
+    
+    <footer class="footer">                                                  <!--footer code-->
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contactus.html">Contact us</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="Privacy Policy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="Dogfoundation.html">Foundation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                        <h4>online story</h4>
+                        <ul>
+                            <li><a href="story.html">Blogs</a></li>
+                            <li><a href="gallary.html">Photos</a></li>
+                        </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+    
+</body>
+</head>
+    
+</html>

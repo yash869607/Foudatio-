@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gallery</title>
+    <style>
+        /* Basic styling for the gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* .thumbnail {
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            cursor: pointer;
+        } */
+
+        .thumbnail img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <div class="thumbnail" onclick="openLightbox('image1.jpg')">
+            <img src="img/rohit1.jpeg" alt="Thumbnail 1">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit2.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit3.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit4.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit5.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit6.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit7.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit8.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit9.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit10.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit11.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit12.jpeg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="img/rohit13 (2).jpg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="https://thumbs.dreamstime.com/b/golden-retriever-dog-21668976.jpg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="https://thumbs.dreamstime.com/b/young-attractive-girl-her-pet-dog-beach-colorised-image-54472679.jpg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="https://thumbs.dreamstime.com/b/happy-family-two-children-running-dog-together-happy-family-two-children-running-dog-together-autumn-119764842.jpg" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="https://media.istockphoto.com/id/907620940/photo/street-dog-family-in-india.webp?b=1&s=612x612&w=0&k=20&c=O5Wt_OIX6THXTDWe1afRdsxfgyXzqQMojm6C9VjyZsU=" alt="Thumbnail 2">
+        </div>
+        <div class="thumbnail" onclick="openLightbox('image2.jpg')">
+            <img src="https://media.istockphoto.com/id/463318759/photo/two-dogs-at-rest.jpg?s=1024x1024&w=is&k=20&c=AodSfaPPBEpE3hcKai6JfS-I8Eha6NVG8oCvrmkRYxw=" alt="Thumbnail 2">
+        </div>
+        <!-- Add more thumbnails as needed -->
+    </div>
+
+    <div class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="Lightbox Image">
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox-image').src = imageSrc;
+            document.querySelector('.lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.querySelector('.lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
